@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+
+  db:
+    image: adrienstas/db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: challenges
+    ports:
+      - 8080:3306
+    volumes:
+      - dbdata:/var/lib/mysql
+    
+  api:
+    image: adrienstas/api
+    depends_on:
+      - db
+    restart: always
+    environment:
+      PORT: 3000
+      HOST: 10.3.51.232
+      PASSWORD: password
+      USER: root
+      DATABASE: challenges
+      DBPORT: 8080
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+
+volumes:
+  dbdata:
