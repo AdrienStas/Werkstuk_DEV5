@@ -4,6 +4,7 @@
 
 ## /challenges
 - Geeft alle challenges in database (GET)
+- Hieronder vind je een voorbeeld response
 ```
 [
     {
@@ -28,6 +29,7 @@
 
 ## /challenges:id
 - Geeft challenge weer met gegeven id (GET)
+- Hieronder vind je een voorbeeld response
 ```
 {
         "id": 2,
@@ -42,6 +44,7 @@
 
 ## /challenges
 - Insert de challenges in de database (POST)
+- Hieronder vind je de body die je moet meesturen
 ```
 {
     "naam": "Bert",
@@ -55,6 +58,7 @@
 
 ## /challenges/:id
 - Update de challenge met het meegegeven id (PUT)
+- Hieronder vind je de body die je moet meesturen
 ```
 {
     "naam": "Bert",
@@ -80,6 +84,7 @@
 
 ## /types
 - Geeft alle types in database (GET)
+- Hieronder vind je een voorbeeld response
 ```
 [
     {
@@ -100,6 +105,7 @@
 
 ## /types:id
 - Geeft het type weer met gegeven id (GET)
+- Hieronder vind je een voorbeeld response
 ```
 {
     "id": 2,
@@ -110,6 +116,7 @@
 
 ## /types
 - Insert een type in de database (POST)
+- Hieronder vind je de body die je moet meesturen
 ```
 {
     "name": "team"
@@ -119,6 +126,7 @@
 
 ## /types:id
 - Update het type met het meegegeven id (PUT)
+- Hieronder vind je de body die je moet meesturen
 ```
 {
     "name": "teamchallenge"
